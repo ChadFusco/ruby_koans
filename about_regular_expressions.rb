@@ -143,7 +143,7 @@ class AboutRegularExpressions < Neo::Koan
 
   # THINK ABOUT IT:
   #
-  # Explain the difference between a character class ([...]) and alternation (|)
+  # Explain the difference between a character class ([...]) and alternation (|).
 
   # ------------------------------------------------------------------
 
