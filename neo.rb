@@ -187,6 +187,7 @@ module Neo
         yield
       rescue Exception => ex
         expected = ex.is_a?(exception)
+        # puts ex.class.name if caller[1] =~ /test_calling_global_methods_with_wrong_number_of_arguments/
         assert(expected, "Exception #{exception.inspect} expected, but #{ex.inspect} was raised")
         return ex
       end
