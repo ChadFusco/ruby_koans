@@ -118,7 +118,6 @@ class AboutControlStatements < Neo::Koan
       i += 1
       next if (i % 2) == 0
       result << i
-      puts i
     end
     assert_equal [1, 3, 5, 7, 9], result
   end
