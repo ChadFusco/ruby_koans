@@ -18,6 +18,10 @@ def triangle(a, b, c)
   [a, b, c].each do |side|
     lengths[side] += 1
   end
+  raise TriangleError if a <= 0 || b <= 0 || c <= 0
+  raise TriangleError if a + b <= c
+  raise TriangleError if a + c <= b
+  raise TriangleError if b + c <= a
   if lengths.size == 1
     :equilateral
   elsif lengths.size == 2
